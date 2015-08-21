@@ -20,4 +20,3 @@ def prime_factors(target):
     return primes
 
 print prime_factors(600851475143)
-print 71 *839 * 1471 * 6857
