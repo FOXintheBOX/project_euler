@@ -1,16 +1,15 @@
-def fibonacci(max_value,divisor):
-    val_pair = [1,2]
+def fibonacci(max_value):
+    vals = [1,2]
     i = 0
     seq = 0
-    sum_chosen = 2
-    while seq < max_value:
-        seq = val_pair[0] + val_pair[1]
-        val_pair[i] = seq
+    sum_even = 0
+    while vals[i] < max_value:
+        if vals[i] % 2 == 0:
+            sum_even += vals[i]
+            print vals[i]
+        vals[i] = sum(vals)
         i = 1 - i
-        if seq % divisor == 0 and seq < max_value:
-            sum_chosen += seq
-            print seq
     print "...."
-    return sum_chosen
+    return sum_even
 
-print fibonacci(4000000,2)
+print fibonacci(4000000)
