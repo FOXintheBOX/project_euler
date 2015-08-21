@@ -12,4 +12,4 @@ def fibonacci(max_value,divisor):
     print "...."
     return sum_chosen
 
-print fibonacci(4000000)
+print fibonacci(4000000,2)
