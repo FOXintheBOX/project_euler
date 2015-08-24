@@ -32,7 +32,7 @@ units = {
     19: "nineteen"
 }
 
-
+#good for n < 1000
 def write_number(n):
     output = ""
     if n >= 100:
